@@ -49,6 +49,7 @@
   font-size: 1.3rem;
   text-align: center;
   background-color: var(--cor-cinza);
+  color: var(--cor-branco);
   padding: 20px;
 }
 

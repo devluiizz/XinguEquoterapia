@@ -1,0 +1,291 @@
+.historia {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.historia h2 {
+  font-size: 4rem;
+  margin-bottom: 60px;
+  animation: fadeInTitle 2s ease-in-out;
+}
+
+.historia-caixa {
+  background-color: var(--cor-branco);
+  color: var(--cor-cinza);
+  padding: 60px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 6px;
+}
+
+.historia-caixa-container {
+  display: flex;
+  gap: 40px;
+  margin-bottom: 60px;
+}
+
+.historia-caixa-container-conteudo {
+  flex: 1;
+  animation: fadeInText 1s ease-in-out;
+}
+
+.historia-caixa-container-conteudo p {
+  font-size: 1.5rem;
+}
+
+.historia-caixa-container-imgs {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.historia-caixa-container-imgs picture {
+  background-color: rgba(93, 158, 115, 0.2);
+  padding: 10px;
+  text-align: center;
+  border-radius: 4px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.historia-caixa-container-imgs picture img {
+  border: 2px solid var(--cor-preto);
+  border-radius: 6px;
+  animation: fadeInImage 1.2s ease-in-out;
+}
+
+.historia-caixa-container-imgs picture p {
+  font-size: 1.125rem;
+  margin-top: 6px;
+}
+
+.historia-caixa-container-imgs-maria {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+/* Membros */
+
+.historia-caixa-membros {
+  margin-bottom: 60px;
+}
+
+.historia-caixa-membros > h3 {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 32px;
+}
+
+.historia-caixa-membros-lista {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.historia-caixa-membros-lista-item .titulo-font {
+  color: var(--cor-branco);
+  margin-bottom: 6px;
+  font-size: 1.3rem;
+}
+
+.historia-caixa-membros-lista-item {
+  background-color: var(--cor-azul);
+  color: #d9d9d9;
+  padding: 16px 40px;
+  border-radius: 6px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.historia-caixa-membros-lista-item:hover {
+  transform: translateY(-10px);
+}
+
+.historia-caixa-membros-lista-item p {
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+/* Equipe */
+
+.historia-caixa-equipe > h3 {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 32px;
+}
+
+.historia-caixa-equipe-container {
+  background-color: var(--cor-azul);
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 6px;
+}
+
+.historia-caixa-equipe-container img {
+  border: 2px solid var(--cor-preto);
+  border-radius: 6px;
+  margin-bottom: 20px;
+}
+
+.historia-caixa-equipe-nomes,
+.historia-caixa-equipe-voluntarios {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.historia-caixa-equipe-container .titulo-font {
+  color: var(--cor-branco);
+}
+
+.historia-caixa-equipe p,
+h3 {
+  font-size: 1.2rem;
+}
+
+.historia-caixa-equipe-voluntarios h3 {
+  text-transform: uppercase;
+}
+
+/* Reponsividade */
+
+@media (max-width: 1200px) {
+  .historia {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .historia h2 {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 40px;
+  }
+
+  .historia-caixa {
+    padding: 40px;
+  }
+
+  .historia-caixa-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .historia-caixa-container-conteudo p {
+    font-size: 1.3rem;
+  }
+
+  .historia-caixa-container-imgs picture img {
+    width: 100%;
+    height: auto;
+  }
+
+  .historia-caixa-membros-lista-item {
+    padding: 16px 20px;
+  }
+
+  .historia-caixa-membros-lista {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .historia-caixa-equipe-container img {
+    width: 100%;
+    height: auto;
+  }
+
+  .historia-caixa-equipe p,
+  h3 {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .historia h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+  }
+
+  .historia-caixa {
+    padding: 20px;
+  }
+
+  .historia-caixa-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .historia-caixa-container-conteudo p {
+    font-size: 1.2rem;
+  }
+
+  .historia-caixa-container-imgs picture img {
+    width: 100%;
+    height: auto;
+  }
+
+  .historia-caixa-membros-lista {
+    flex-direction: column;
+  }
+
+  .historia-caixa-membros-lista-item {
+    padding: 16px 10px;
+  }
+
+  .historia-caixa-equipe-container {
+    padding: 10px;
+  }
+
+  .historia-caixa-equipe p {
+    font-size: 1rem;
+  }
+
+  .historia-caixa-membros-lista-item p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .historia {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .historia h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+
+  .historia-caixa {
+    padding: 10px;
+  }
+
+  .historia-caixa-container-conteudo p {
+    font-size: 1rem;
+  }
+
+  .historia-caixa-container-imgs picture img {
+    width: 100%;
+    height: auto;
+  }
+
+  .historia-caixa-membros-lista-item p {
+    font-size: 0.9rem;
+  }
+
+  .historia-caixa-equipe p {
+    font-size: 0.9rem;
+  }
+
+  .historia-caixa-membros-lista-item {
+    padding: 10px 5px;
+  }
+
+  .historia-caixa-equipe-container img {
+    width: 100%;
+  }
+}

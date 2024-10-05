@@ -1,3 +1,7 @@
+.header-bg {
+  background-color: var(--cor-preto) !important;
+}
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -13,7 +17,7 @@
 
     li a {
       padding: 6px 12px;
-      color: var(--cor-cinza);
+      color: var(--cor-branco);
       font-weight: 500;
     }
   }
